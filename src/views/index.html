@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center p-5 mt-3" style="background-color: #dcecf1">
+        <form action="" method="POST">
+            <div>
+                <label for="nomeAluno">Nome</label>
+                <input type="text" id='nomeAluno' name='nomeAluno'>
+            </div>
+            <div>
+                <label for="curso">Curso</label>
+                <input type="text" id='curso' name='curso'>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button>Salvar</button>
+            </div>
+            {{aluno.nome}} - 
+            {{curso.curso}}
+        </form>
+    </div>
+    
+<script>
+    console.log(document.getElementById('nomeAluno').innerHTML)
+</script>
+</body>
+</html>
