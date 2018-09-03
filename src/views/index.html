@@ -7,29 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="./static/assets/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./static/assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center p-5 mt-3" style="background-color: #dcecf1">
-        <form action="" method="POST">
+    <div id="postResultDiv" class="position-absolute w-100 mt-0"></div>
+    <div class="container d-flex justify-content-center p-5 mt-5" style="background-color: #dcecf1">
+        <form action="" method="POST" id="cadastro">
             <div>
                 <label for="nomeAluno">Nome</label>
-                <input type="text" id='nomeAluno' name='nomeAluno'>
+                <input type="text" id='nomeAluno' name='nomeAluno' required>
             </div>
             <div>
                 <label for="curso">Curso</label>
-                <input type="text" id='curso' name='curso'>
+                <input type="text" id='curso' name='curso' required>
             </div>
             <div class="d-flex justify-content-end">
-                <button>Salvar</button>
+                <button type="submit" class="btn btn-default">Enviar</button>
             </div>
-            {{aluno.nome}} - 
-            {{curso.curso}}
+            
         </form>
-    </div>
+    </div> 
     
-<script>
-    console.log(document.getElementById('nomeAluno').innerHTML)
-</script>
+    <script src="./static/postAjax.js"></script>
 </body>
 </html>
