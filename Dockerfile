@@ -10,6 +10,8 @@ RUN npm install -g nodemon gulp
 
 RUN npm install gulp
 
+RUN yarn
+
 COPY . .
 
 EXPOSE 8080

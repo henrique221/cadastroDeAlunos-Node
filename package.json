@@ -1,13 +1,12 @@
 {
   "name": "cadastro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
     "dev": "npm install && nodemon src/index.js",
-    "gulp": "ash -c 'gulp copy'"
+    "start": "node src/index.js",
+    "gulp": "npm install gulp && ash -c 'gulp copy'"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -21,5 +20,14 @@
   },
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrique221/cadastroDeAlunos-Node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henrique221/cadastroDeAlunos-Node/issues"
+  },
+  "homepage": "https://github.com/henrique221/cadastroDeAlunos-Node#readme",
+  "description": ""
 }
